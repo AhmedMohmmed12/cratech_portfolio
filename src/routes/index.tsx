@@ -27,10 +27,13 @@ const services = [
   { n: "05", t: "UI / UX Design", d: "Interfaces designed with intent — clear hierarchy, deliberate motion, and pixel discipline." },
 ];
 
+const BASE = import.meta.env.BASE_URL;
+
 const projects = [
-  { tag: "WEB · AI", title: "Noor — Medical AI", desc: "AI-based breast cancer detection platform with patient management and radiologist dashboard.", img: "/projects/welcome_page_1780946736543.png" },
-  { tag: "WEB · CORPORATE", title: "Nuzl Al-Sharqiya", desc: "Modern corporate website for a leading contracting, construction, and heavy equipment leasing firm in Saudi Arabia.", img: "/projects/nuzl_al_shrgiah.png" },
-  { tag: "WEB · CORPORATE", title: "Schedora", desc: "Smart fully responsive appointment booking platform that allows users to easily schedule sessions with service providers.", img: "/projects/Schedora.jpeg" },
+  { tag: "WEB · AI", title: "Noor — Medical AI", desc: "AI-based breast cancer detection platform with patient management and radiologist dashboard.", img: `${BASE}projects/welcome_page_1780946736543.png` },
+  { tag: "WEB · CORPORATE", title: "Nuzl Al-Sharqiya", desc: "Modern corporate website for a leading contracting, construction, and heavy equipment leasing firm in Saudi Arabia.", img: `${BASE}projects/nuzl_al_shrgiah.png` },
+  { tag: "WEB · CORPORATE", title: "Schedora", desc: "Smart fully responsive appointment booking platform that allows users to easily schedule sessions with service providers.", img: `${BASE}projects/Schedora.jpeg` },
+  { tag: "WEB · CORPORATE", title: "AdviseMate", desc: "Academic Advisor System project aims to create a user-friendly platform that enhances communication between students, advisors, and administrative staff, supporting academic success.", img: `${BASE}projects/AdviseMate.png` },
 ];
 
 function Index() {
@@ -137,7 +140,7 @@ function Index() {
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               ["3", "Engineers in the crate"],
-              ["30+", "Projects shipped"],
+              ["15+", "Projects shipped"],
               ["10+", "Stacks mastered"],
               ["24h", "Avg. reply time"],
             ].map(([k, v]) => (
