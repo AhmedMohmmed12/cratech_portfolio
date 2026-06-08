@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/portfolio/",
+  base: process.env.VITE_BASE_URL ?? "/",
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
