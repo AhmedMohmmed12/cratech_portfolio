@@ -13,7 +13,7 @@ i18n
       en: { translation: en },
       ar: { translation: ar },
     },
-    lng: (typeof window !== 'undefined' && localStorage.getItem('i18nextLng')) || 'ar',
+    lng: (typeof window !== 'undefined' && typeof localStorage !== 'undefined' && localStorage.getItem('i18nextLng')) || 'ar',
     fallbackLng: 'ar',
     interpolation: {
       escapeValue: false,
@@ -28,8 +28,10 @@ i18n
 // Handle RTL
 i18n.on('languageChanged', (lng) => {
   const dir = lng === 'ar' ? 'rtl' : 'ltr';
-  document.documentElement.dir = dir;
-  document.documentElement.lang = lng;
+  if (typeof document !== 'undefined') {
+    document.documentElement.dir = dir;
+    document.documentElement.lang = lng;
+  }
 });
 
 // Set initial direction
