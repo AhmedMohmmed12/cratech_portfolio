@@ -13,15 +13,16 @@ i18n
       en: { translation: en },
       ar: { translation: ar },
     },
-    lng: (typeof window !== 'undefined' && typeof localStorage !== 'undefined' && localStorage.getItem('i18nextLng')) || 'ar',
+    // Safely get the initial language
+    lng: (typeof window !== 'undefined' && localStorage.getItem('i18nextLng')) || 'ar',
     fallbackLng: 'ar',
+    supportedLngs: ['en', 'ar'],
     interpolation: {
       escapeValue: false,
     },
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
-      lookupLocalStorage: 'i18nextLng',
     },
   });
 

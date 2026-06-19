@@ -2,20 +2,20 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logo from "@/assets/cratech-logo.jpg";
 import { useTranslation } from "react-i18next";
+import i18n from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const { t } = useTranslation();
     return {
       meta: [
-        { title: t("head_title", { defaultValue: "Cratech — A Digital Future Starts With An Idea" }) },
+        { title: i18n.t("head_title", { defaultValue: "Cratech — A Digital Future Starts With An Idea" }) },
         { 
           name: "description", 
-          content: t("head_desc", { defaultValue: "Cratech: a trio of programmers building bold web, mobile, and digital products from the ground up." }) 
+          content: i18n.t("head_desc", { defaultValue: "Cratech: a trio of programmers building bold web, mobile, and digital products from the ground up." }) 
         },
-        { property: "og:title", content: t("head_title", { defaultValue: "Cratech — A Digital Future Starts With An Idea" }) },
-        { property: "og:description", content: t("head_desc", { defaultValue: "A trio of programmers building bold digital products." }) },
+        { property: "og:title", content: i18n.t("head_title", { defaultValue: "Cratech — A Digital Future Starts With An Idea" }) },
+        { property: "og:description", content: i18n.t("head_desc", { defaultValue: "A trio of programmers building bold digital products." }) },
         { property: "og:image", content: logo },
         { name: "twitter:image", content: logo },
       ],
