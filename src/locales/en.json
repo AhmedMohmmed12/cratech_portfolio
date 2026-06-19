@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "contact": "Contact",
+    "hire_us": "Hire us"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "title_1": "A DIGITAL",
+    "title_2": "FUTURE STARTS",
+    "title_3": "WITH AN",
+    "title_idea": "idea.",
+    "desc": "Cratech is a trio of programmers shipping production-ready web, mobile, and brand experiences. We work small, decide fast, and build like it's our own product.",
+    "see_work": "See our work",
+    "start_project": "Start a project"
+  },
+  "plate": {
+    "the_crate": "The Crate",
+    "ideas_in": "Ideas go in.",
+    "products_out": "Products come out."
+  },
+  "stats": {
+    "engineers": "Engineers in the crate",
+    "projects": "Projects shipped",
+    "stacks": "Stacks mastered",
+    "reply_time": "Avg. reply time"
+  },
+  "work": {
+    "label": "◢ 001 / Selected Work",
+    "title": "Things we built."
+  },
+  "services": {
+    "label": "◢ 002 / Services",
+    "title": "What's in the crate."
+  },
+  "contact": {
+    "label": "◢ 004 / Let's build",
+    "title_1": "Got an idea?",
+    "title_2": "Let's open the crate.",
+    "desc": "Tell us what you're building. We'll reply within 24 hours with honest thoughts and next steps.",
+    "start_project": "Start a project",
+    "watch_tiktok": "Watch us on TikTok"
+  },
+  "footer": {
+    "copy": "© {{year}} CRATECH — A DIGITAL FUTURE STARTS WITH AN IDEA",
+    "tiktok": "TikTok",
+    "linktree": "Linktree"
+  },
+  "not_found": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "desc": "The page you're looking for doesn't exist or has been moved.",
+    "go_home": "Go home"
+  },
+  "error": {
+    "title": "This page didn't load",
+    "desc": "Something went wrong on our end. You can try refreshing or head back home.",
+    "try_again": "Try again",
+    "go_home": "Go home"
+  },
+  "projects": {
+    "noor": {
+      "tag": "WEB · AI",
+      "title": "Noor — Medical AI",
+      "desc": "AI-based breast cancer detection platform with patient management and radiologist dashboard."
+    },
+    "nuzl": {
+      "tag": "WEB · CORPORATE",
+      "title": "Nuzl Al-Sharqiya",
+      "desc": "Modern corporate website for a leading contracting, construction, and heavy equipment leasing firm in Saudi Arabia."
+    },
+    "schedora": {
+      "tag": "WEB · CORPORATE",
+      "title": "Schedora",
+      "desc": "Smart fully responsive appointment booking platform that allows users to easily schedule sessions with service providers."
+    },
+    "advise_mate": {
+      "tag": "WEB · CORPORATE",
+      "title": "AdviseMate",
+      "desc": "Academic Advisor System project aims to create a user-friendly platform that enhances communication between students, advisors, and administrative staff, supporting academic success."
+    }
+  },
+  "services_list": {
+    "portfolios": {
+      "title": "Company Portfolios",
+      "desc": "Polished portfolio sites that present your company's work, team, and services with intent."
+    },
+    "graduation": {
+      "title": "Graduation Projects",
+      "desc": "End-to-end builds for students — from idea and proposal to a working, defendable product."
+    },
+    "web": {
+      "title": "Web Development",
+      "desc": "Production-grade websites and web apps with modern stacks — fast, accessible, and built to scale."
+    },
+    "mobile": {
+      "title": "Mobile Apps",
+      "desc": "Cross-platform mobile experiences that feel native, perform smoothly, and ship on time."
+    },
+    "ui_ux": {
+      "title": "UI / UX Design",
+      "desc": "Interfaces designed with intent — clear hierarchy, deliberate motion, and pixel discipline."
+    }
+  }
+}

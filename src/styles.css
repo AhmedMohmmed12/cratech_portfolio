@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -30,8 +31,8 @@
   --color-ring: var(--ring);
   --color-silver: var(--silver);
   --color-silver-dim: var(--silver-dim);
-  --font-display: "Archivo Black", "Arial Black", sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-display: "Archivo Black", "Cairo", "Arial Black", sans-serif;
+  --font-body: "Inter", "Cairo", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -96,7 +97,8 @@
   background: linear-gradient(180deg, oklch(1 0 0) 0%, oklch(0.6 0.005 240) 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  backface-visibility: hidden;
 }
 
 @keyframes scan-line {
